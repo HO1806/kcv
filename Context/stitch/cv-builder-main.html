@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kosove CV - Executive Builder</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#002109",
+                      "error": "#ffb4ab",
+                      "secondary": "#4ae176",
+                      "on-surface-variant": "#c2c6d6",
+                      "secondary-fixed-dim": "#4ae176",
+                      "tertiary-container": "#a078ff",
+                      "on-error-container": "#ffdad6",
+                      "error-container": "#93000a",
+                      "secondary-container": "#00b954",
+                      "primary": "#adc6ff",
+                      "surface-container-lowest": "#090e1c",
+                      "primary-fixed-dim": "#adc6ff",
+                      "on-secondary-container": "#004119",
+                      "surface-dim": "#0e1322",
+                      "tertiary-fixed-dim": "#d0bcff",
+                      "on-surface": "#dee1f7",
+                      "surface-container-low": "#161b2b",
+                      "on-secondary": "#003915",
+                      "primary-fixed": "#d8e2ff",
+                      "inverse-on-surface": "#2b3040",
+                      "on-primary": "#002e6a",
+                      "surface": "#0e1322",
+                      "surface-container-highest": "#2f3445",
+                      "background": "#0e1322",
+                      "on-primary-container": "#00285d",
+                      "on-primary-fixed-variant": "#004395",
+                      "surface-bright": "#343949",
+                      "on-tertiary-container": "#340080",
+                      "on-tertiary-fixed-variant": "#5516be",
+                      "on-primary-fixed": "#001a42",
+                      "outline-variant": "#424754",
+                      "inverse-surface": "#dee1f7",
+                      "secondary-fixed": "#6bff8f",
+                      "on-background": "#dee1f7",
+                      "primary-container": "#4d8eff",
+                      "on-secondary-fixed-variant": "#005321",
+                      "surface-tint": "#adc6ff",
+                      "on-error": "#690005",
+                      "tertiary-fixed": "#e9ddff",
+                      "inverse-primary": "#005ac2",
+                      "tertiary": "#d0bcff",
+                      "outline": "#8c909f",
+                      "on-tertiary-fixed": "#23005c",
+                      "surface-container": "#1a1f2f",
+                      "surface-variant": "#2f3445",
+                      "surface-container-high": "#25293a",
+                      "on-tertiary": "#3c0091"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Newsreader"
+                      ],
+                      "display": [
+                              "Newsreader"
+                      ],
+                      "body": [
+                              "Inter"
+                      ],
+                      "label": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {}
+      },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-headline { font-family: 'Newsreader', serif; }
+        .font-display { font-family: 'Newsreader', serif; }
+        
+        /* Custom Scrollbar for sleekness */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2f3445;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #424754;
+        }
+        
+        .ghost-border {
+            border: 1px solid rgba(66, 71, 84, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface h-screen w-full overflow-hidden flex flex-col">
+<!-- JSON Anchor: TopNavBar (Adapted for specific prompt requirements) -->
+<nav class="bg-[#0e1322] flex justify-between items-center w-full px-8 h-12 shadow-[0_1px_0_0_rgba(47,52,69,0.15)] z-20 shrink-0">
+<!-- Logo -->
+<div class="flex items-center gap-1">
+<span class="font-display italic font-bold text-secondary text-lg tracking-tight">Kosove</span>
+<span class="font-display italic text-on-surface text-lg">CV</span>
+</div>
+<!-- Navigation Links -->
+<div class="flex gap-8 items-center h-full">
+<a class="text-slate-400 hover:text-slate-200 transition-colors font-body font-semibold uppercase tracking-wider text-[11px] h-full flex items-center border-b-2 border-transparent hover:border-surface-container-highest" href="#">Candidatures</a>
+<a class="text-primary border-b-2 border-primary font-body font-semibold uppercase tracking-wider text-[11px] h-full flex items-center pb-[2px]" href="#">Builder</a>
+<a class="text-slate-400 hover:text-slate-200 transition-colors font-body font-semibold uppercase tracking-wider text-[11px] h-full flex items-center border-b-2 border-transparent hover:border-surface-container-highest" href="#">Paramètres</a>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-4">
+<!-- Quota Ring (12%) -->
+<div class="relative w-7 h-7 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<circle class="stroke-surface-container-highest" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-secondary" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="88" stroke-width="3"></circle>
+</svg>
+<span class="absolute text-[9px] font-bold text-secondary">12</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">help</span>
+</button>
+</div>
+</nav>
+<!-- Main Workspace Two-Column -->
+<main class="flex-1 flex overflow-hidden w-full max-w-[1440px] mx-auto">
+<!-- LEFT COLUMN: Form Editor (Dense, High-Utility) -->
+<section class="flex-1 flex flex-col bg-surface overflow-hidden relative">
+<!-- Editor Header Strip -->
+<header class="h-12 bg-surface-container-low px-6 flex justify-between items-center shrink-0">
+<div class="flex items-center gap-3">
+<span class="font-body text-[9px] uppercase tracking-[0.1em] text-outline">Inspecteur</span>
+<span class="text-outline-variant">|</span>
+<h1 class="font-headline text-xl font-medium text-on-surface tracking-tight">Profil</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body text-[10px] text-primary-fixed-dim bg-primary/10 px-2 py-1 rounded">Sauvegardé</span>
+<button class="w-8 h-8 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">undo</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">redo</span>
+</button>
+</div>
+</header>
+<!-- Base CV Card Context -->
+<div class="px-6 py-4 shrink-0">
+<div class="bg-surface-container-high rounded flex items-center justify-between p-3 ghost-border">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">magic_button</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-body font-semibold text-[13px] text-on-surface">CV DE BASE</h2>
+<span class="bg-secondary/20 text-secondary text-[9px] uppercase font-bold px-1.5 py-0.5 rounded tracking-wide">Généré ✓</span>
+</div>
+<p class="font-body text-[11px] text-on-surface-variant mt-0.5">Mise à jour via extraction IA</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex bg-surface-container-lowest rounded p-0.5">
+<button class="px-2.5 py-1 text-[11px] font-semibold rounded bg-surface-container-highest text-on-surface shadow-sm">FR</button>
+<button class="px-2.5 py-1 text-[11px] font-medium rounded text-on-surface-variant hover:text-on-surface">EN</button>
+</div>
+<button class="h-7 px-3 bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed-variant font-semibold text-[11px] rounded shadow-[0_2px_10px_rgba(77,142,255,0.2)] hover:opacity-90 transition-opacity">
+                            Régénérer
+                        </button>
+</div>
+</div>
+</div>
+<!-- Scrollable Form Area -->
+<div class="flex-1 overflow-y-auto px-6 pb-20">
+<div class="max-w-2xl mx-auto space-y-6">
+<!-- Section Collapsed: Personnel -->
+<div class="group border-b border-surface-container-high pb-4">
+<button class="w-full flex items-center justify-between text-left">
+<h3 class="font-headline text-lg text-on-surface font-medium">Informations Personnelles</h3>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-on-surface transition-colors">expand_more</span>
+</button>
+</div>
+<!-- Section Expanded: Experience -->
+<div class="border-b border-surface-container-high pb-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline text-lg text-on-surface font-medium">Expérience Professionnelle</h3>
+<button class="text-primary text-[12px] font-medium hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">add</span> Ajouter
+                            </button>
+</div>
+<!-- Experience Item Card -->
+<div class="bg-surface-container-low rounded-lg p-4 relative group ghost-border transition-colors hover:bg-surface-container-high/50">
+<!-- Drag Handle -->
+<div class="absolute left-1 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 cursor-grab p-1 text-outline-variant">
+<span class="material-symbols-outlined text-[16px]">drag_indicator</span>
+</div>
+<div class="pl-4">
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block font-body font-semibold uppercase text-[10px] tracking-wider text-outline mb-1.5">Titre du poste</label>
+<input class="w-full bg-surface-container-lowest text-on-surface text-[13px] font-medium border-b border-outline-variant/20 border-t-0 border-x-0 focus:border-primary focus:ring-0 focus:bg-surface px-3 py-2 transition-all" type="text" value="Directeur Régional des Ventes"/>
+</div>
+<div>
+<label class="block font-body font-semibold uppercase text-[10px] tracking-wider text-outline mb-1.5">Entreprise</label>
+<input class="w-full bg-surface-container-lowest text-on-surface text-[13px] font-medium border-b border-outline-variant/20 border-t-0 border-x-0 focus:border-primary focus:ring-0 focus:bg-surface px-3 py-2 transition-all" type="text" value="Marjane Holding"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block font-body font-semibold uppercase text-[10px] tracking-wider text-outline mb-1.5">Période</label>
+<div class="flex items-center gap-2">
+<input class="w-full bg-surface-container-lowest text-on-surface text-[13px] border-b border-outline-variant/20 border-t-0 border-x-0 focus:border-primary px-3 py-2" type="text" value="Juin 2018"/>
+<span class="text-outline-variant">-</span>
+<input class="w-full bg-surface-container-lowest text-on-surface text-[13px] border-b border-outline-variant/20 border-t-0 border-x-0 focus:border-primary px-3 py-2" type="text" value="Présent"/>
+</div>
+</div>
+<div>
+<label class="block font-body font-semibold uppercase text-[10px] tracking-wider text-outline mb-1.5">Lieu</label>
+<input class="w-full bg-surface-container-lowest text-on-surface text-[13px] border-b border-outline-variant/20 border-t-0 border-x-0 focus:border-primary px-3 py-2" type="text" value="Casablanca, Maroc"/>
+</div>
+</div>
+<!-- Bullet Points -->
+<div class="space-y-3 mt-5">
+<label class="flex items-center justify-between font-body font-semibold uppercase text-[10px] tracking-wider text-outline mb-1.5">
+<span>Réalisations</span>
+<button class="text-primary hover:text-primary-container flex items-center gap-1" title="Améliorer avec l'IA">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</button>
+</label>
+<div class="flex items-start gap-2 relative group/bullet">
+<span class="material-symbols-outlined text-[14px] text-outline-variant mt-2 cursor-grab opacity-50 hover:opacity-100">drag_indicator</span>
+<textarea class="w-full bg-surface-container-lowest text-on-surface text-[13px] leading-relaxed border-b border-outline-variant/20 border-t-0 border-x-0 focus:border-primary focus:ring-0 focus:bg-surface px-3 py-2 min-h-[60px] resize-none" rows="2">Pilotage de la stratégie commerciale sur 15 hypermarchés régionaux, générant une croissance de 18% du CA (300M MAD) sur 2 ans.</textarea>
+<button class="absolute right-2 top-2 text-outline-variant hover:text-error opacity-0 group-hover/bullet:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-start gap-2 relative group/bullet">
+<span class="material-symbols-outlined text-[14px] text-outline-variant mt-2 cursor-grab opacity-50 hover:opacity-100">drag_indicator</span>
+<textarea class="w-full bg-surface-container-lowest text-on-surface text-[13px] leading-relaxed border-b border-outline-variant/20 border-t-0 border-x-0 focus:border-primary focus:ring-0 focus:bg-surface px-3 py-2 min-h-[60px] resize-none" rows="2">Restructuration de la force de vente (120 collaborateurs) et mise en place de KPIs de performance unifiés.</textarea>
+<button class="absolute right-2 top-2 text-outline-variant hover:text-error opacity-0 group-hover/bullet:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Other Sections Collapsed -->
+<div class="group border-b border-surface-container-high pb-4">
+<button class="w-full flex items-center justify-between text-left">
+<h3 class="font-headline text-lg text-on-surface font-medium">Formation</h3>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-on-surface transition-colors">expand_more</span>
+</button>
+</div>
+<div class="group border-b border-surface-container-high pb-4">
+<button class="w-full flex items-center justify-between text-left">
+<h3 class="font-headline text-lg text-on-surface font-medium">Compétences</h3>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-on-surface transition-colors">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT COLUMN: CV Preview (Airy, Asymmetric, Editorial) -->
+<section class="w-[602px] bg-[#070c14] border-l border-surface-container-high flex flex-col shrink-0 relative z-10 shadow-[-10px_0_30px_rgba(0,0,0,0.5)]">
+<!-- Preview Header Toolbar -->
+<div class="h-10 bg-surface-container-low px-4 flex justify-between items-center shrink-0 border-b border-surface-container-high/50">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline-variant">visibility</span>
+<span class="font-body text-[11px] font-semibold text-on-surface tracking-wide">APERÇU</span>
+</div>
+<!-- Template Selector -->
+<div class="flex items-center gap-3 bg-surface rounded px-2 py-1">
+<button class="text-outline-variant hover:text-on-surface"><span class="material-symbols-outlined text-[16px]">chevron_left</span></button>
+<span class="font-body text-[11px] font-medium text-on-surface">Leafish (6/6)</span>
+<button class="text-outline-variant hover:text-on-surface"><span class="material-symbols-outlined text-[16px]">chevron_right</span></button>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body text-[10px] text-outline uppercase tracking-wider">FR</span>
+<button class="ml-2 text-outline-variant hover:text-on-surface" title="Télécharger PDF">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<!-- Canvas Container -->
+<div class="flex-1 overflow-y-auto p-8 flex justify-center bg-[#070c14]">
+<!-- The Paper Document (Fixed A4 aspect ratio approximation) -->
+<div class="w-[530px] min-h-[750px] bg-white text-gray-900 shadow-[0_20px_50px_rgba(0,0,0,0.6)] relative flex flex-col font-sans" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+<!-- Leafish Template Design -->
+<!-- Top Accent Line -->
+<div class="h-2 w-full bg-[#1e4a3a]"></div>
+<div class="p-8 flex-1 flex flex-col">
+<!-- Header Area -->
+<div class="flex gap-6 items-start border-b-2 border-[#1e4a3a]/10 pb-6 mb-6">
+<div class="w-20 h-20 bg-gray-200 rounded-full overflow-hidden shrink-0 border-2 border-white shadow-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="professional corporate headshot portrait of a middle eastern man in dark suit with tie, soft studio lighting, grey background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJ6jJ3W9IVx3AiqIHgJCBeLCCrSIPjYgX4s_3q7jOOuc1qk8lJF8bLmyjoGGTHgr3b_JmeBE4FaHWTSCV5XdNWxR-ibPjQqD-AyHN1Ww64Y9CJjcFjCXX9UoRNA5ZyJO4Dz3Cngajd7O7Z7rLJetemX1gmXHKercXdhjVyEKMOoDdABLu8LwTGz87t1VukaCFjNHOFuJsO2T9kjnyfhf7IaKDDzGdN2JcsEAA2K56asHz6qCiX640I-WIC-R9f8XuchLMjslGHFIc');"></div>
+</div>
+<div class="flex-1">
+<h1 class="text-3xl font-bold text-[#1e4a3a] tracking-tight mb-1" style="font-family: 'Georgia', serif;">Youssef Benali</h1>
+<p class="text-gray-600 font-medium text-sm tracking-wide uppercase mb-3">Directeur Régional des Ventes</p>
+<div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">mail</span> y.benali@email.com</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">call</span> +212 600 00 00 00</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">location_on</span> Casablanca, Maroc</span>
+</div>
+</div>
+</div>
+<!-- Summary -->
+<div class="mb-6">
+<p class="text-xs leading-relaxed text-gray-700">Expert en développement commercial avec plus de 10 ans d'expérience dans le secteur de la grande distribution. Reconnu pour ma capacité à restructurer les équipes de vente, optimiser les processus opérationnels et générer une croissance soutenue du chiffre d'affaires dans des environnements très concurrentiels.</p>
+</div>
+<div class="flex gap-8 flex-1">
+<!-- Main Content Column -->
+<div class="flex-[2]">
+<h2 class="text-sm font-bold text-[#1e4a3a] uppercase tracking-widest border-b border-[#1e4a3a]/20 pb-1 mb-4">Expérience Professionnelle</h2>
+<div class="mb-5 relative">
+<div class="absolute left-[-16px] top-1.5 w-1.5 h-1.5 rounded-full bg-[#1e4a3a]"></div>
+<h3 class="text-sm font-bold text-gray-900">Directeur Régional des Ventes</h3>
+<div class="flex justify-between text-xs mb-2">
+<span class="text-[#1e4a3a] font-medium">Marjane Holding</span>
+<span class="text-gray-500 italic">Juin 2018 - Présent</span>
+</div>
+<ul class="list-disc pl-4 text-xs text-gray-700 space-y-1.5 marker:text-gray-300">
+<li>Pilotage de la stratégie commerciale sur 15 hypermarchés régionaux, générant une croissance de 18% du CA (300M MAD) sur 2 ans.</li>
+<li>Restructuration de la force de vente (120 collaborateurs) et mise en place de KPIs de performance unifiés.</li>
+</ul>
+</div>
+<div class="mb-5 relative">
+<div class="absolute left-[-16px] top-1.5 w-1.5 h-1.5 rounded-full bg-[#1e4a3a]"></div>
+<h3 class="text-sm font-bold text-gray-900">Chef des Ventes National</h3>
+<div class="flex justify-between text-xs mb-2">
+<span class="text-[#1e4a3a] font-medium">Centrale Danone</span>
+<span class="text-gray-500 italic">Jan 2014 - Mai 2018</span>
+</div>
+<ul class="list-disc pl-4 text-xs text-gray-700 space-y-1.5 marker:text-gray-300">
+<li>Gestion d'un portefeuille de grands comptes nationaux et négociation des accords annuels.</li>
+</ul>
+</div>
+</div>
+<!-- Side Content Column -->
+<div class="flex-[1]">
+<h2 class="text-sm font-bold text-[#1e4a3a] uppercase tracking-widest border-b border-[#1e4a3a]/20 pb-1 mb-4">Formation</h2>
+<div class="mb-5">
+<h3 class="text-xs font-bold text-gray-900 leading-tight">Master en Stratégie Commerciale</h3>
+<p class="text-xs text-[#1e4a3a] mb-0.5">ISCAE Casablanca</p>
+<p class="text-[10px] text-gray-500 italic">2012</p>
+</div>
+<h2 class="text-sm font-bold text-[#1e4a3a] uppercase tracking-widest border-b border-[#1e4a3a]/20 pb-1 mb-4 mt-6">Compétences</h2>
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] px-2 py-1 bg-[#1e4a3a]/10 text-[#1e4a3a] font-medium rounded">Négociation B2B</span>
+<span class="text-[10px] px-2 py-1 bg-[#1e4a3a]/10 text-[#1e4a3a] font-medium rounded">Management</span>
+<span class="text-[10px] px-2 py-1 bg-[#1e4a3a]/10 text-[#1e4a3a] font-medium rounded">Analyse P&amp;L</span>
+<span class="text-[10px] px-2 py-1 bg-[#1e4a3a]/10 text-[#1e4a3a] font-medium rounded">Stratégie GMS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Status Bar -->
+<footer class="h-8 bg-[#070c14] border-t border-surface-container-high/50 flex justify-between items-center px-6 shrink-0 z-30">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-body text-[10px] text-outline-variant font-medium">Sauvegarde automatique active</span>
+</div>
+<div class="flex items-center gap-4 text-outline-variant">
+<button class="hover:text-on-surface transition-colors flex items-center gap-1" title="Ctrl+Z">
+<span class="material-symbols-outlined text-[14px]">undo</span>
+</button>
+<button class="hover:text-on-surface transition-colors flex items-center gap-1" title="Ctrl+Y">
+<span class="material-symbols-outlined text-[14px]">redo</span>
+</button>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-body text-[10px] text-outline-variant">Complétude du CV</span>
+<div class="w-24 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[85%]"></div>
+</div>
+<span class="font-body text-[10px] font-bold text-secondary">85%</span>
+</div>
+</footer>
+</body></html>

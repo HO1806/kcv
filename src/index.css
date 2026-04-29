@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --radius-xs: 0;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+  --radius-3xl: 0;
+}
+
+@layer base {
+  /* ─── Design tokens ──────────────────────────────────────────────────────────
+     Light = oxblood/burgundy on warm cream (Stitch V3).
+     Dark = forest green on deep charcoal chrome (Stitch V1) — CV preview itself
+     stays light because it's the artifact you're producing.
+     Names follow Material-style roles so future Stitch syncs map cleanly.
+  ─────────────────────────────────────────────────────────────────────────── */
+  :root {
+    --sidebar-width: 240px;
+    --rail-width: 56px;
+
+    /* Type pair from Stitch */
+    --font-sans: 'Manrope', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Newsreader', Georgia, serif;
+
+    /* LIGHT — oxblood */
+    --c-surface: #fcf9f3;             /* page bg, warm cream */
+    --c-surface-bright: #ffffff;      /* card / inspector */
+    --c-surface-container: #f3eeea;   /* nested card, hover row */
+    --c-surface-container-high: #e5e2dc;
+    --c-on-surface: #1c1c18;          /* primary text */
+    --c-on-surface-muted: #6b6060;    /* secondary text — bumped for ≥4.5:1 on #fcf9f3 surface */
+    --c-outline: #a89f9f;             /* hairline — bumped from #c8c1c1 for visible input borders */
+    --c-primary: #0f7a3d;             /* unified green — darker on cream for AA contrast (≈5.4:1 on #fcf9f3) */
+    --c-accent: #0f7a3d;              /* unified green — same as primary; matches dark theme identity */
+    --c-primary-soft: #c7e9d3;        /* tinted green bg */
+    --c-on-primary: #ffffff;
+    --c-success: #1b4332;             /* green for status text */
+    --c-on-success: #ffffff;          /* text on green bg */
+    --c-warning: #b45309;
+    --c-danger: #93000a;
+    --c-error: #93000a;               /* alias of danger */
+  }
+
+  .dark {
+    /* DARK — forest green chrome, CV preview kept light via its own surfaces.
+       Note: --c-primary stays deeper for backgrounds (white text on it AA-passes).
+       --c-accent is lighter (emerald-400) for use as TEXT on dark surfaces. */
+    --c-surface: #121417;             /* ink charcoal canvas */
+    --c-surface-bright: #1a1d21;      /* inspector */
+    --c-surface-container: #161a1e;   /* textareas, nested */
+    --c-surface-container-high: #2d343d;
+    --c-on-surface: #f8f9fa;
+    --c-on-surface-muted: #9ca8b8;    /* dark theme muted — ≈7.2:1 on #121417 */
+    --c-outline: #475569;             /* hairline — bumped from #2d343d for visible input borders */
+    --c-primary: #1b4332;             /* deep forest green for bg fills (passes white-text AA) */
+    --c-accent: #34d399;              /* emerald-400 — for text/borders on dark surfaces */
+    --c-primary-soft: #2d6a4f;
+    --c-on-primary: #ffffff;
+    --c-success: #34d399;
+    --c-on-success: #052e1d;          /* deep ink for text on emerald success bg */
+    --c-warning: #fbbf24;
+    --c-danger: #f87171;
+    --c-error: #f87171;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Hide scrollbar on tab rows while keeping scroll behavior */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Material Symbols Outlined icon font */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+  }
+  .material-symbols-outlined.fill {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  #root {
+    min-height: 100dvh;
+  }
+}
+
+@layer components {
+  /* Display: page H1 (rare). Serif italic, Title Case in source. */
+  .ks-display { font-family: var(--font-serif); font-style: italic; font-weight: 700; font-size: 28px; line-height: 1.1; letter-spacing: -0.01em; }
+  .ks-display-lg { font-family: var(--font-serif); font-style: italic; font-weight: 700; font-size: 36px; line-height: 1.05; letter-spacing: -0.015em; }
+
+  /* Section heading: H2/H3 inside a page. Serif, weight 700, Title Case. */
+  .ks-section { font-family: var(--font-serif); font-weight: 700; font-size: 18px; line-height: 1.2; letter-spacing: -0.005em; }
+
+  /* Eyebrow: ONLY use above section dividers, sentence case (not caps). */
+  .ks-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: var(--c-on-surface-muted); text-transform: none; }
+
+  /* Body */
+  .ks-body { font-size: 14px; font-weight: 400; line-height: 1.55; color: var(--c-on-surface); }
+  .ks-body-sm { font-size: 13px; font-weight: 400; line-height: 1.5; color: var(--c-on-surface); }
+
+  /* Label */
+  .ks-label { font-size: 12px; font-weight: 500; color: var(--c-on-surface-muted); letter-spacing: 0; text-transform: none; }
+
+  /* Caption / meta */
+  .ks-caption { font-size: 11px; font-weight: 400; color: var(--c-on-surface-muted); }
+
+  /* Hide the legacy "shouts" classes — DO NOT use these in new code. */
+  .ks-deprecated-caps { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; }
+
+  /* AI-generated content marker — Notion-style: italic + sparkle prefix.
+     Apply to text rendered from AI so users can distinguish "I wrote this"
+     vs "AI wrote this, edit if you like." */
+  .ks-ai-generated {
+    font-style: italic;
+  }
+  .ks-ai-generated::before {
+    content: '✨ ';
+    font-style: normal;
+    opacity: 0.6;
+    margin-right: 0.15em;
+  }
+}
+
+.print-cv { display: none; }
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  .no-print { display: none !important; }
+  body {
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide everything, then reveal only the CV */
+  body * { visibility: hidden !important; }
+  .print-cv {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    visibility: visible !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 210mm !important;
+    min-height: 297mm !important;
+    background: white !important;
+    z-index: 9999 !important;
+    overflow: visible !important;
+  }
+  .print-cv > * {
+    visibility: visible !important;
+    width: 100% !important;
+  }
+  .print-cv * {
+    visibility: visible !important;
+    overflow: visible !important;
+  }
+}

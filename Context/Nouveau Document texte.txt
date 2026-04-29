@@ -1,0 +1,206 @@
+Good, I extracted your CV content. You already have a solid base — but it’s **not optimized for ATS + job targeting**, and it lacks measurable impact and structure.
+
+I’ll do 3 things for you:
+
+1. Show what I extracted (cleaned)
+2. Tell you what’s missing (important)
+3. Give you a **powerful reusable prompt + editable TXT CV template**
+
+---
+
+## 🔍 What I extracted from your PDF (clean version)
+
+* **Name:** Younes Ouelhakem
+
+* **Email:** youn…@gmail.com
+
+* **Phone:** 06 15 05 89 41
+
+* **Location:** Rabat
+
+* **Education:**
+
+  * Technicien spécialisé en gestion des entreprises (commerce & marketing) — 2021–2023
+  * Baccalauréat commerce — 2021
+
+* **Experience (Internships):**
+
+  * Gestion des entreprises (1 month)
+
+    * Administrative organization
+    * Commercial document tracking
+  * Commerce & Marketing (2 months)
+
+    * Promotional activities
+    * Client contact
+  * Service client (1 month)
+
+    * استقبال clients / orientation
+    * Handling requests
+
+* **Skills:**
+
+  * Gestion de projet
+  * Organisation d’événements
+  * Résolution de problèmes
+  * Budgétisation
+  * Communication digitale / interne
+  * Réseaux sociaux
+  * Rédaction newsletters
+
+* **Languages:**
+
+  * Arabic: Native
+  * French: Good
+  * English: Good
+
+* **IT:**
+
+  * Word, Excel, PowerPoint, Internet
+
+---
+
+## ❗ What is missing (CRITICAL for getting hired)
+
+You won’t compete well without these:
+
+* ❌ No **job target (important for ATS)**
+* ❌ No **results / impact (numbers)**
+* ❌ No **sales/customer achievements**
+* ❌ No **tools (CRM, POS, reporting)**
+* ❌ No **clear positioning (B2C / sales / retail)**
+* ❌ No **keywords like: vente, prospection, merchandising, objectifs**
+
+👉 This is exactly why many people stay stuck.
+
+---
+
+## 🔧 What I still need from you
+
+Answer these to upgrade your CV:
+
+1. Did you ever:
+
+   * Sell something? (even informal)
+   * Help clients directly?
+   * Use Excel for tracking?
+   * Use Canva / social media for business?
+
+2. Are you okay adding:
+
+   * “Objectifs atteints” (even estimated)
+   * “Participation active à…” (to strengthen experience)
+
+3. Do you want CV in:
+
+   * French (recommended for Morocco)
+   * English
+
+---
+
+## 📄 ATS CV TEMPLATE (REUSABLE – TXT)
+
+Use this and just change the **TARGET JOB** each time.
+
+[NAME]
+[PHONE] | [EMAIL] | Rabat
+
+OBJECTIF PROFESSIONNEL
+Candidat diplômé en gestion des entreprises (option commerce & marketing), je recherche un poste de **[TARGET JOB]** dans le secteur **[SECTOR]**, afin de développer mes compétences en vente, relation client et performance commerciale.
+
+COMPÉTENCES CLÉS
+
+* Relation client & accueil
+* Vente & techniques de persuasion
+* Suivi commercial & gestion des demandes
+* Communication digitale & réseaux sociaux
+* Organisation & gestion des tâches
+* Microsoft Excel, Word, PowerPoint
+
+EXPÉRIENCE PROFESSIONNELLE
+
+Stage – Commerce & Marketing
+[Company if known] | Rabat | [Dates]
+
+* Participation aux activités promotionnelles en point de vente
+* Interaction directe avec les clients et identification des besoins
+* Contribution à l’amélioration de la visibilité des produits
+
+Stage – Service Client
+[Company] | Rabat | [Dates]
+
+* Accueil et orientation des clients
+* Traitement des demandes et résolution de problèmes
+* Amélioration de la satisfaction client
+
+Stage – Gestion des Entreprises
+[Company] | Rabat | [Dates]
+
+* Organisation administrative et gestion documentaire
+* Suivi des opérations commerciales
+
+FORMATION
+Technicien Spécialisé en Gestion des Entreprises (Commerce & Marketing)
+OFPPT | 2021 – 2023
+
+Baccalauréat Commerce
+2021
+
+COMPÉTENCES TECHNIQUES
+
+* Excel (suivi, tableaux)
+* Word / PowerPoint
+* Navigation Internet
+
+LANGUES
+
+* Arabe : Natif
+* Français : Bon niveau
+* Anglais : Bon niveau
+
+CENTRES D’INTÉRÊT
+Lecture, voyage, natation, jardinage
+
+---
+
+## 🤖 POWERFUL PROMPT (use this anytime to adapt CV)
+
+Copy this when you want to tailor your CV for a job:
+
+Act as an expert recruiter in Morocco.
+
+I have a CV below. Optimize it for ATS and for this job:
+
+TARGET JOB: [insert job title]
+SECTOR: [Retail / FMCG / Cosmetics / etc]
+
+Requirements:
+
+* Add strong keywords related to the job
+* Rewrite experience with impact and action verbs
+* Adapt skills to match the job
+* Keep it ATS-friendly (simple format)
+* Do NOT invent fake experience but improve wording
+* Add measurable impact if possible (even estimated)
+* Make it professional and convincing
+
+Here is my CV:
+[PASTE CV]
+
+---
+
+## ⚠️ Final advice (important)
+
+Right now, your CV is **“student-level”**.
+We need to push it to **“job-ready commercial profile”**.
+
+The fastest upgrade:
+
+* Add **sales keywords**
+* Add **client interaction**
+* Add **results (even small ones)**
+
+---
+
+If you want, next step I can:
+👉 Rewrite your CV specifically for **FMCG / retail / cosmetics jobs in Rabat** (high chance of getting interviews)
