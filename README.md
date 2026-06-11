@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+# AI CV Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-assisted CV / résumé builder. Maintain one base profile, generate job-tailored
+applications with Google Gemini, render them through customizable templates, and export
+to PDF — all offline-capable as an installable PWA.
 
-Currently, two official plugins are available:
+## Features
+- Multi-profile workspace built on a single reusable base CV
+- AI-tailored applications per job description (Google Gemini)
+- Handlebars-driven, swappable CV templates
+- One-click PDF export (React-PDF)
+- Offline-first storage (IndexedDB via Dexie) + installable PWA
+- Internationalization (i18next)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+React 19 · TypeScript · Vite · Tailwind CSS · Zustand · Dexie (IndexedDB) ·
+`@google/generative-ai` · `@react-pdf/renderer` · Handlebars · i18next · vite-plugin-pwa
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+```bash
+npm install
+npm run dev      # Vite dev server — http://localhost:5173
+npm run build    # type-check + production build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Provide your own Gemini API key at runtime via the in-app **Settings** page. It is stored
+client-side only and is never committed to the repository.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Status
+Active personal project.
